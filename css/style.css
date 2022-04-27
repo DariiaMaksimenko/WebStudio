@@ -35,9 +35,6 @@ body {
     clip-path: inset(50%);
     margin: -1px;
 }
-/* .current{
-    color: #2196F3;
-} */
 
 p,h1,h2,h3,h4,h5,h6{
     margin: 0;
@@ -217,9 +214,7 @@ img {
     padding: 10px 32px;
     
 }
-/* .banner-btn:hover{
-    cursor: pointer;
-} */
+
 /*-----------------SPECIFICITY--------------- */
 
 .specificity{
