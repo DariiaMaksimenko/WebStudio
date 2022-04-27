@@ -1,2 +1,1 @@
-# WebStudio
-Courses (my firs project)
+# courses
