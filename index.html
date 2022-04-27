@@ -42,7 +42,7 @@
     <section class="banner">
         <div class="container">
             <h1 class="banner-text">Эффективные решения для вашего бизнеса</h1>
-            <button class="banner-btn">Заказать услугу</button>
+            <button class="banner-btn" data-modal-open>Заказать услугу</button>
         </div>
     </section>
     <!--Specificity-->
@@ -380,5 +380,17 @@
         </div>  
     </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button type="button" class="modal-close-btn" data-modal-close>
+            X
+          </button>
+        </div>
+      </div>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+      <script src="./js/modal.js"></script>
 </body>
 </html>
