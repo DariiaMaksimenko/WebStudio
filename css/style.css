@@ -302,7 +302,7 @@ padding-bottom: var(--padding-in-container);
 .about-us-item-title{
 position: absolute;
 bottom: 0;
-background:linear-gradient(rgba(47, 48, 58, 0.8),rgba(47, 48, 58, 0.8)) ;
+background-color:rgba(47, 48, 58, 0.8) ;
 color: #ffffff;
 font-weight: 700;
 font-size: 14px;
@@ -310,7 +310,7 @@ line-height: 16px;
 text-align: center;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-line-height: 1.5;
+line-height: 1.14;
 letter-spacing: 0.03em;
 padding: 27px 82px 27px 82px;
 width: 100%;
@@ -614,10 +614,14 @@ width: 100%;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     overflow: auto;
 }
-.portfolio-item:hover .portfolio-img-cover-text{
+.portfolio-item:hover,
+.portfolio-item:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio-item:hover .portfolio-img-cover-text{   
     transform: translateY(0%);
 }
+
 .item-text{
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
