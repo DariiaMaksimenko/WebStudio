@@ -397,12 +397,53 @@
           <button type="button" class="modal-close-btn" data-modal-close>
             X
           </button>
+          <p class="modal-title" title="Оставьте свои данные, мы вам перезвоним">
+            Оставьте свои данные, мы вам перезвоним
+          </p>
+          <form action="">
+                <div class="modal-form-fields">
+                    <label for="user-name" class="modal-form-label">Имя</label>
+                    <input type="text"
+                    class="modal-input"
+                    name="user-name"
+                    id="user-name">
+                </div>
+                <div class="modal-form-fields">
+                    <label for="user-tel" class="modal-form-label">Телефон</label>
+                    <input type="tel"
+                    class="modal-input"
+                    name="user-tel"
+                    id="user-tel">
+                </div>
+                <div class="modal-form-fields">
+                    <label for="user-email" class="modal-form-label">Почта</label>
+                    <input type="email"
+                    class="modal-input"
+                    name="user-email"
+                    id="user-email">
+                </div>
+                <div class="modal-field">
+                    <label class="modal-form-label" for="user-comment">Комментарий</label>
+                    <textarea
+                      name="user-comment"
+                      id="user-comment"
+                      placeholder="Введите текст"
+                      class="user-text"
+                    ></textarea>
+                  </div>
+                  <div class="modal-form-fields checkbox">                    
+                    <input type="checkbox"
+                    class="modal-checkbox"
+                    name="accept_rules"
+                    id="accept_rules">
+                    <label for="accept_rules" class="modal-form-label">Соглашаюсь с рассылкой и принимаю <a href="#" class="accept_rules-link">Условия договора</a></label>
+                </div>
+
+                <button type="submit" class="form-button">Отправить</button>
+          </form>
         </div>
       </div>
-      <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script> -->
+     
       <script src="./js/modal.js"></script>
 </body>
 </html>
