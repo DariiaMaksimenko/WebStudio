@@ -1,0 +1,148 @@
+.footer {
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;    
+    display: block;       
+}
+.footer-item{
+    font-style: normal;
+}
+.footer-item:not(:last-child){    
+    margin-bottom: 9px;
+}
+.footer-logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: block;
+    margin-bottom: 20px;
+}
+.footer-address {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;   
+}
+.footer-email {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color:rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-email:hover,
+.footer-email:focus{
+    color: var(--accent-color);
+}
+.footer-tel {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color:rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-wrap{
+    display: flex;
+    align-items: baseline;   
+}
+.footer-contact{    
+    margin-right: 70px;
+    width: 40%;
+}
+.footer-soc{
+    margin-right: 93px;
+}
+.social-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:#FFFFFF;
+    margin-bottom: 20px; 
+}
+.footer-soc-list{
+    display: flex;
+    justify-content: center;
+}
+.footer-soc-item +.footer-soc-item{
+    margin-left: 10px;
+}
+.footer-soc-link{
+    width: 44px;
+    height: 44px;
+    background-color:#44454E;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-soc-link:hover,
+.footer-soc-link:focus{
+    background-color:#2196F3;
+}
+.footer-soc-icon{
+    fill: #FFFFFF;
+}
+.footer-soc:hover .footer-soc-icon,
+.footer-soc:focus .footer-soc-icon{
+    fill: #FFFFFF;
+}
+.footer-subscribe{
+    width: 100%;
+}
+.footer-subscribe-field{
+    display: flex;
+    position: relative;
+}
+.footer-subscribe-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.footer-subscribe-input{
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+    letter-spacing: 0.03em;
+    background: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 15px 0 15px 16px;
+    color: #EEEEEE;
+    outline: none;    
+}
+.footer-subscribe-input:focus{
+    border-color: var(--accent-color);
+}
+.footer-subscribe-btn{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 62px 10px 29px;
+    margin-left: 12px;    
+}
+.footer-subscribe-icon{
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+}
