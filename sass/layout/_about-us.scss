@@ -1,7 +1,7 @@
 .about-us{
     padding-bottom: var(--padding-in-container);
 }
-.about-us-title {
+.about-us__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -15,14 +15,14 @@
     flex-wrap: wrap;
     margin-left: -30px;
 }
-.about-us-item{
+.about-us-list__item{
     width: calc(100% / 3 - 30px);
     margin-left: 30px;
 }
-.about-us-item-wrap{
+.about-us-wrap{
     position: relative;
 }
-.about-us-item-title{
+.about-us-wrap__title{
 position: absolute;
 bottom: 0;
 background-color:rgba(47, 48, 58, 0.8) ;
