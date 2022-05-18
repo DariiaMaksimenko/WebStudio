@@ -32,6 +32,10 @@
     padding-bottom: var(--typical-padding);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
+        &:hover,
+        &:focus{
+        color: var(--accent-color);
+}
 }
 .menu-list__link.current {
     font-weight: 500;
@@ -55,10 +59,7 @@
 .menu-list__item:not(:last-child){
     margin-right: 50px;
 }
-.menu-list__link:hover,
-.menu-list__link:focus{
-    color: var(--accent-color);
-}
+
 .header__contact{
     padding-top: var(--typical-padding);
     padding-bottom: var(--typical-padding);
@@ -73,13 +74,12 @@
     color:#757575;
     margin-right: 50px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus{
+        color: var(--accent-color);
+    }
 }
-.contact__email:hover,
-.contact__email:focus,
-.footer-email:hover,
-.footer-email:focus {
-  color: var(--accent-color);
-}
+
 .contact__tel {
     font-weight: 500;
     font-size: 14px;
@@ -87,13 +87,12 @@
     letter-spacing: 0.02em;
     color:#757575; 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+        color: var(--accent-color);
+    }
 }
-.contact__tel:hover,
-.contact__tel:focus,
-.contact__tel:hover,
-.contact__tel:focus {
-  color: var(--accent-color);
-}
+
 .contact__email,.contact__tel{
     display: flex;
     align-items: center;
