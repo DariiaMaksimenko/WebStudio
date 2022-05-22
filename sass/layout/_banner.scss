@@ -6,18 +6,30 @@
     background-size: cover;     
 }
 .banner .container{
-    padding: 200px 0 200px 0;
+    padding: 118px 0 118px 0;
+      @media screen and (min-width: 1600px) {
+        padding: 200px 0 200px 0;
+      }
 }
 .banner__text {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color:#ffffff;  
-    max-width: 696px;  
-    margin: 0 auto 30px;    
+    max-width: 360px;  
+    margin: 0 auto 30px;  
+    @media screen and (min-width: 768px) {
+        width: calc(100% / 2 - 30px);
+        margin-left: 30px;
+      }
+      @media screen and (min-width: 1600px) {
+        max-width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+      }  
 }
 .banner__btn {
     font-family: 'Roboto';

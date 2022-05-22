@@ -1,7 +1,5 @@
 .container{
-    width: 100%;
-    padding-left: 15px; 
-    padding-right: 15px;
+    width: 100%;    
     margin: 0 auto;
     outline: 1px solid red; 
     @media screen and (min-width: 480px) {
@@ -10,8 +8,11 @@
     @media screen and (min-width: 768px) {
         max-width: 738px;
     }
+    
     @media screen and (min-width: 1600px) {
         max-width: 1200px;
+        padding-left: 15px; 
+        padding-right: 15px;
     }
     
 }
