@@ -1,7 +1,7 @@
 .our-clients{
     padding-top:60px;
     padding-bottom: 60px;
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         padding-top: 94px;
         padding-bottom: 94px;
       } 
@@ -14,7 +14,7 @@
     letter-spacing: 0.03em;
     color:var(--main-title-color);
     margin-bottom: 30px;
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         margin-bottom: var(--title-to-content-marging);
   }
 }
@@ -32,7 +32,7 @@
         width: calc(100% / 3 - 30px);
         margin-left: 30px;
       }
-      @media screen and (min-width: 1600px) {
+      @media screen and (min-width: 1200px) {
         width: calc(100% / 6 - 30px);
       }  
 }
@@ -51,7 +51,7 @@
     @media screen and (min-width: 768px) {
         max-width: 226px;
       }
-      @media screen and (min-width: 1600px) {
+      @media screen and (min-width: 1200px) {
         max-width: 170px;
       } 
 }
