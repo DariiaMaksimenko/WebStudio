@@ -17,26 +17,59 @@
 
 <body>
     <header class="header">
-        <!-- <div class="container">
-            <a href="./index.html" class="header__logo link"><span class="logo">Web</span>Studio</a> -->
-    <!--Menu-->
-            <!-- <nav class="navigation">
-            <ul class="menu-list list">
-                <li class="menu-list__item"><a class="menu-list__link current link" href="./index.html">Студия</a></li>
-                <li class="menu-list__item"><a class="menu-list__link link" href="./portfolio.html">Портфолио</a></li>
-                <li class="menu-list__item"><a class="menu-list__link link" href="#">Контакты</a></li>
-            </ul>
-            </nav>     -->
+        <div class="container">
+            <a href="./index.html" class="header__logo link"><span class="logo">Web</span>Studio</a>
+            <button type="button" class="menu-open-btn">
+                <svg class="menu_icon" width="40" height="40">
+                    <use href="./img/icons/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <!--Menu-->
+            <nav class="navigation">
+                <ul class="menu-list list">
+                    <li class="menu-list__item"><a class="menu-list__link current link" href="./index.html">Студия</a></li>
+                    <li class="menu-list__item"><a class="menu-list__link link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="menu-list__item"><a class="menu-list__link link" href="#">Контакты</a></li>
+                </ul>
+            </nav>   
     <!--Contact-->
-            <!-- <div class="contact header__contact">
-            <a class="contact__email link" href="mailto:info@devstudio.com"><svg class="contact__icon" width="16" height="12">
-                <use href="./img/icons/symbol-defs.svg#icon-envelope"></use>
-            </svg>info@devstudio.com</a>
-            <a class="contact__tel link" href="tel:+380961111111"> <svg class="contact__icon" width="10" height="16">
-                <use href="./img/icons/symbol-defs.svg#icon-smartphone"></use>
-            </svg>+38 096 111 11 11</a>
+            <div class="contact header__contact">
+                <a class="contact__email link" href="mailto:info@devstudio.com"><svg class="contact__icon" width="16" height="12">
+                    <use href="./img/icons/symbol-defs.svg#icon-envelope"></use>
+                    </svg>info@devstudio.com</a>
+                <a class="contact__tel link" href="tel:+380961111111"> <svg class="contact__icon" width="10" height="16">
+                    <use href="./img/icons/symbol-defs.svg#icon-smartphone"></use>
+                    </svg>+38 096 111 11 11</a>
             </div>
-        </div> -->
+        </div> 
+        <div class="mob-menu is-hidden" > 
+            <div class="container">
+                <div class="mob-menu-top">
+                    <button type="button" class="menu-close-btn">
+                        <svg class="menu_icon" width="40" height="40">
+                            <use href="./img/icons/symbol-defs.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <ul class="mob-menu-list list">
+                        <li class="mob-menu-list__item"><a class="mob-menu-list__link current link" href="./index.html">Студия</a></li>
+                        <li class="mob-menu-list__item"><a class="mob-menu-list__link link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="mob-menu-list__item"><a class="mob-menu-list__link link" href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="mob-menu-bottom">
+                    <div class="mob-contact">                    
+                        <a class="mob-contact__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        <a class="mob-contact__email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </div>
+                    <ul class="mob-menu-soc-list list">
+                        <li class="mob-menu-soc-list__item"><a class="mob-menu-soc-list__link link" href="#">Instagram</a></li>
+                        <li class="mob-menu-soc-list__item"><a class="mob-menu-soc-list__link link" href="#">Twitter</a></li>
+                        <li class="mob-menu-soc-list__item"><a class="mob-menu-soc-list__link link" href="#">Facebook</a></li>
+                        <li class="mob-menu-soc-list__item"><a class="mob-menu-soc-list__link link" href="#">Linkedin</a></li>
+                    </ul>
+                    </div>
+                </div>
+        </div>
     </header>
    <!--Banner-->
     <section class="banner">
@@ -515,5 +548,6 @@
       </div>
      
       <script src="./js/modal.js"></script>
+      <script src="./js/menu.js"></script>
 </body>
 </html>
