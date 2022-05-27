@@ -1,6 +1,6 @@
 
 .modal {
-    width: 528px;
+    width: 450px;
     min-height: 581px;
     background-color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -11,6 +11,9 @@
     transition: transform 700ms;
     transform: translate(-50%, -50%) scale(1) rotate(0);
     padding: 40px;
+    @include desktop {
+        width: 528px;       
+    }
 }  
 .modal-close-btn {
     position: absolute;
@@ -122,7 +125,7 @@
     margin-bottom: 30px;
 }
 .accept-rules-text{
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     display: flex;
@@ -134,6 +137,9 @@
         height: 15px;
         border: 2px solid #212121;
         border-radius: 3px;
+    }
+    @include desktop {
+        font-size: 14px;        
     }
 }
 

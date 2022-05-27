@@ -2,7 +2,7 @@
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;    
-    display: block;       
+    display: block;     
 }
 .footer-item{
     font-style: normal;
@@ -20,7 +20,10 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: block;
     margin-bottom: 20px;
-    text-align: center; //для моб
+    text-align: center; 
+    @include desktop {
+        text-align: initial;
+    }
 }
 .footer-address {
     font-size: 14px;
@@ -29,6 +32,11 @@
     color: #FFFFFF;  
     font-size: 14px;
     text-align: center; //mob
+    margin-bottom: 60px;//mob
+    @include desktop {
+
+        text-align: initial;
+    }
 }
 .footer-email {
     font-size: 14px;
@@ -53,26 +61,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;  
-    @media screen and (min-width: 768px) {
-        
+     @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
-    @media screen and (min-width: 1200px) {
-        display: flex;
+    @include desktop {
+        flex-wrap: nowrap;
         align-items: baseline; 
     }
 }
-.footer-contact{    
-    
-    
-    @media screen and (min-width: 1200px) {
-        width: 40%;
-        margin-right: 70px; 
+.footer-contact{ 
+    @include desktop {        
+        margin-right: 70px;
+        width: 40%; 
     }
 }
 .footer-soc{
-    text-align: center;//mob
-    @media screen and (min-width: 1200px) {
+    text-align: center;
+    margin-bottom: 60px;
+    @include tablet {
+        margin-bottom: 102px;
+    }
+    @include desktop {
+        
         margin-right: 93px;
+        text-align: inherit;
     }
 }
 .social-title {
@@ -83,10 +97,12 @@
     text-transform: uppercase;
     color:#FFFFFF;
     margin-bottom: 20px; 
+    
 }
 .footer-soc-list{
     display: flex;
     justify-content: center;
+    
 }
 .footer-soc-item +.footer-soc-item{
     margin-left: 10px;
@@ -119,7 +135,14 @@
 }
 .footer-subscribe-field{
     display: flex;
-    position: relative;
+    // position: relative;
+    flex-direction: column;//mob
+    align-items: center;//mob
+   
+    @include desktop {
+        flex-direction: row;
+        align-items: baseline;
+    }
 }
 .footer-subscribe-title{
     font-weight: 700;
@@ -129,6 +152,10 @@
     color: #FFFFFF;
     text-transform: uppercase;
     margin-bottom: 20px;
+    text-align: center; //mob
+    @include desktop {
+        text-align: initial;
+    }
 }
 .footer-subscribe-input{
     width: 100%;
@@ -143,12 +170,21 @@
     padding: 15px 0 15px 16px;
     color: #EEEEEE;
     outline: none;    
+    margin-bottom: 20px;
         &:focus{
         border-color: var(--accent-color);
+    }
+    @include tablet {
+        width: 450px;
+    }
+    @include tablet {
+        width: 100%;
     }
 }
 
 .footer-subscribe-btn{
+    position: relative;
+    box-sizing: border-box;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -159,8 +195,12 @@
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    padding: 10px 62px 10px 29px;
-    margin-left: 12px;    
+    padding: 10px 62px 10px 29px;        
+    width: 200px;
+    height: 50px; 
+    @include desktop {
+        margin-left: 12px;
+    }
 }
 .footer-subscribe-icon{
     position: absolute;

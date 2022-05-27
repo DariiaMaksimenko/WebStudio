@@ -1,7 +1,7 @@
 .our-clients{
     padding-top:60px;
     padding-bottom: 60px;
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         padding-top: 94px;
         padding-bottom: 94px;
       } 
@@ -14,7 +14,7 @@
     letter-spacing: 0.03em;
     color:var(--main-title-color);
     margin-bottom: 30px;
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         margin-bottom: var(--title-to-content-marging);
   }
 }
@@ -28,11 +28,11 @@
     margin-left: 30px; 
     margin-bottom: 30px;
     width: calc(100% / 2 - 30px);   
-    @media screen and (min-width: 768px) {
+     @include tablet {
         width: calc(100% / 3 - 30px);
         margin-left: 30px;
       }
-      @media screen and (min-width: 1200px) {
+      @include desktop {
         width: calc(100% / 6 - 30px);
       }  
 }
@@ -48,10 +48,10 @@
         border: 1px solid #2196F3;
         border-radius: 4px;    
     }
-    @media screen and (min-width: 768px) {
+     @include tablet {
         max-width: 226px;
       }
-      @media screen and (min-width: 1200px) {
+      @include desktop {
         max-width: 170px;
       } 
 }

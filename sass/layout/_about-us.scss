@@ -1,9 +1,9 @@
 .about-us{
     display: none;
-    @media screen and (min-width: 768px) {
+     @include tablet {
         display: none;
       }
-      @media screen and (min-width: 1200px) {
+      @include desktop {
         display:block;
         padding-bottom: var(--padding-in-container);
     

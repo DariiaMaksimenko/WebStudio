@@ -1,3 +1,29 @@
+:root {
+  --accent-color:#2196F3;
+  --logo-color:#2196F3;
+  --main-text-color:#757575;
+  --main-title-color:#212121;
+  --second-background:#F5F4FA;
+  --portfolio-first-btn-background:#F5F4FA;
+  --portfolio-second-btn-background:#2196F3;
+  --title-to-content-marging:50px;
+  --typical-padding:32px;
+  --padding-in-container:94px;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
@@ -22,22 +48,23 @@ img {
 .container {
   width: 100%;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 450px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 738px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
@@ -64,7 +91,7 @@ body {
 }
 
 .modal {
-  width: 528px;
+  width: 450px;
   min-height: 581px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -75,6 +102,11 @@ body {
   transition: transform 700ms;
   transform: translate(-50%, -50%) scale(1) rotate(0);
   padding: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal-close-btn {
@@ -196,7 +228,7 @@ body {
 }
 
 .accept-rules-text {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   display: flex;
@@ -209,6 +241,11 @@ body {
   height: 15px;
   border: 2px solid #212121;
   border-radius: 3px;
+}
+@media screen and (min-width: 1200px) {
+  .accept-rules-text {
+    font-size: 14px;
+  }
 }
 
 .modal-checkbox:checked + .accept-rules-text::before {
@@ -962,6 +999,11 @@ body {
   margin-bottom: 20px;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    text-align: initial;
+  }
+}
 
 .footer-address {
   font-size: 14px;
@@ -970,6 +1012,12 @@ body {
   color: #FFFFFF;
   font-size: 14px;
   text-align: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-address {
+    text-align: initial;
+  }
 }
 
 .footer-email {
@@ -996,26 +1044,40 @@ body {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .footer-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-wrap {
-    display: flex;
+    flex-wrap: nowrap;
     align-items: baseline;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-contact {
-    width: 40%;
     margin-right: 70px;
+    width: 40%;
   }
 }
 
 .footer-soc {
   text-align: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer-soc {
+    margin-bottom: 102px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-soc {
     margin-right: 93px;
+    text-align: inherit;
   }
 }
 
@@ -1065,7 +1127,14 @@ body {
 
 .footer-subscribe-field {
   display: flex;
-  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscribe-field {
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
 
 .footer-subscribe-title {
@@ -1076,6 +1145,12 @@ body {
   color: #FFFFFF;
   text-transform: uppercase;
   margin-bottom: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscribe-title {
+    text-align: initial;
+  }
 }
 
 .footer-subscribe-input {
@@ -1091,12 +1166,25 @@ body {
   padding: 15px 0 15px 16px;
   color: #EEEEEE;
   outline: none;
+  margin-bottom: 20px;
 }
 .footer-subscribe-input:focus {
   border-color: var(--accent-color);
 }
+@media screen and (min-width: 768px) {
+  .footer-subscribe-input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-subscribe-input {
+    width: 100%;
+  }
+}
 
 .footer-subscribe-btn {
+  position: relative;
+  box-sizing: border-box;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -1108,7 +1196,13 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 62px 10px 29px;
-  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscribe-btn {
+    margin-left: 12px;
+  }
 }
 
 .footer-subscribe-icon {
@@ -1215,30 +1309,4 @@ body {
   line-height: 30px;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-}
-
-:root {
-  --accent-color:#2196F3;
-  --logo-color:#2196F3;
-  --main-text-color:#757575;
-  --main-title-color:#212121;
-  --second-background:#F5F4FA;
-  --portfolio-first-btn-background:#F5F4FA;
-  --portfolio-second-btn-background:#2196F3;
-  --title-to-content-marging:50px;
-  --typical-padding:32px;
-  --padding-in-container:94px;
-}
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
 }/*# sourceMappingURL=main.css.map */

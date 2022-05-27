@@ -13,7 +13,7 @@
         ),
         url(../img/banner-bg-mob-2x.jpg);
     }
-    @media screen and (min-width: 768px) {
+     @include tablet {
       background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../img/banner-bg-tablet.jpg);
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
@@ -25,7 +25,7 @@
             url(../img/banner-bg-tablet-2x.jpg);
         }
     }
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../img/banner-bg.png);
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
@@ -40,10 +40,10 @@
 }
 .banner .container{
     padding: 118px 0 118px 0;
-    @media screen and (min-width: 768px) {
+     @include tablet {
         padding: 118px 0 118px 0;
     }
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         padding: 200px 0 200px 0;
     }
 }
@@ -57,10 +57,10 @@
     color:#ffffff;  
     max-width: 360px;  
     margin: 0 auto 30px;  
-    @media screen and (min-width: 768px) {
+     @include tablet {
                
       }
-      @media screen and (min-width: 1200px) {
+      @include desktop {
         max-width: 696px;
         font-size: 44px;
         line-height: 1.36;

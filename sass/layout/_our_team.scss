@@ -2,7 +2,7 @@
     background-color: var(--second-background);
     padding-top:60px;
     padding-bottom: 60px;  
-      @media screen and (min-width: 1200px) {
+      @include desktop {
         padding-top: 94px;
         padding-bottom: 94px;
       }  
@@ -15,14 +15,14 @@
     letter-spacing: 0.03em;
     color: var(--main-title-color);
     margin-bottom: 30px;
-        @media screen and (min-width: 1200px) {
+        @include desktop {
             margin-bottom: var(--title-to-content-marging);
       }
 }
 .our-team-list{
     margin-left: -30px;
     margin-bottom: -30px;
-    @media screen and (min-width: 768px) {
+     @include tablet {
         display: flex;
         flex-wrap: wrap;
       }
@@ -33,11 +33,11 @@
     border-radius: 0px 0px 4px 4px;
     margin-left: 30px; 
     margin-bottom: 30px;
-    @media screen and (min-width: 768px) {
+     @include tablet {
         width: calc(100% / 2 - 30px);
         margin-left: 30px;
       }
-      @media screen and (min-width: 1200px) {
+      @include desktop {
         width: calc(100% / 4 - 30px);
       }
 }
