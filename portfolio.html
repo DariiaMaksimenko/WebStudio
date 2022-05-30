@@ -18,11 +18,16 @@
     <header class="header">
         <div class="container">
             <a href="./index.html" class="header__logo link"><span class="logo">Web</span>Studio</a>
-    <!--Menu-->
+            <button type="button" class="menu-open-btn">
+                <svg class="menu_icon" width="40" height="40">
+                    <use href="./img/icons/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <!--Menu-->
             <nav class="navigation">
             <ul class="menu-list list">
-                <li class="menu-list__item"><a class="menu-list__link current link" href="./index.html">Студия</a></li>
-                <li class="menu-list__item"><a class="menu-list__link link" href="./portfolio.html">Портфолио</a></li>
+                <li class="menu-list__item"><a class="menu-list__link  link" href="./index.html">Студия</a></li>
+                <li class="menu-list__item"><a class="menu-list__link current link" href="./portfolio.html">Портфолио</a></li>
                 <li class="menu-list__item"><a class="menu-list__link link" href="#">Контакты</a></li>
             </ul>
             </nav>    
@@ -35,6 +40,34 @@
                 <use href="./img/icons/symbol-defs.svg#icon-smartphone"></use>
             </svg>+38 096 111 11 11</a>
             </div>
+        </div>
+        <div class="mob-menu is-hidden" > 
+            <div class="container">
+                <div class="mob-menu-top">
+                    <button type="button" class="menu-close-btn">
+                        <svg class="menu_icon" width="40" height="40">
+                            <use href="./img/icons/symbol-defs.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <ul class="mob-menu-list list">
+                        <li class="mob-menu-list__item"><a class="mob-menu-list__link  link" href="./index.html">Студия</a></li>
+                        <li class="mob-menu-list__item"><a class="mob-menu-list__link current link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="mob-menu-list__item"><a class="mob-menu-list__link link" href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="mob-menu-bottom">
+                    <div class="mob-contact">                    
+                        <a class="mob-contact__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        <a class="mob-contact__email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </div>
+                    <ul class="mob-menu-soc-list list">
+                        <li class="mob-menu-soc-list__item"><a class="mob-menu-soc-list__link link" href="#">Instagram</a></li>
+                        <li class="mob-menu-soc-list__item"><a class="mob-menu-soc-list__link link" href="#">Twitter</a></li>
+                        <li class="mob-menu-soc-list__item"><a class="mob-menu-soc-list__link link" href="#">Facebook</a></li>
+                        <li class="mob-menu-soc-list__item"><a class="mob-menu-soc-list__link link" href="#">Linkedin</a></li>
+                    </ul>
+                    </div>
+                </div>
         </div>
     </header>
     <!--PORTFOLIO-->
@@ -53,7 +86,12 @@
             <li class="portfolio-item">
                 <a class="portfolio-item-link link" href="">
                 <div class="portfolio-img-wrap">                
-                    <img src="img/foto1.jpg" alt="" width="370" height="294">
+                    <img 
+                    srcset="
+                    img/foto1.jpg 1x,
+                    img/foto1-2x.jpg 2x
+                    "
+                    src="img/foto1.jpg" alt="" width="370" height="294">
                     <p class="portfolio-img-cover-text">
                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                     </p>
@@ -62,12 +100,17 @@
                     <p class="portfolio-top-title">Технокряк</p>
                     <p class="portfolio-item-text">Веб-сайт</p>
                 </div>
-                </a>
+            </a>
             </li>
             <li class="portfolio-item">
-                <a class="portfolio-item-link link" href="">
+                <a class="portfolio-item-link link" href=""></a>
                 <div class="portfolio-img-wrap">                
-                    <img src="img/foto2.jpg" alt=""  width="370" height="294">
+                    <img 
+                    srcset="
+                    img/foto2.jpg 1x,
+                    img/foto2-2x.jpg 2x
+                    "
+                    src="img/foto2.jpg" alt=""  width="370" height="294">
                     <p class="portfolio-img-cover-text">
                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                     </p>
@@ -75,13 +118,17 @@
                 <div class="item-text">                    
                     <p class="portfolio-top-title">Постер New Orlean vs Golden Star</p>
                     <p class="portfolio-item-text">Дизайн</p>                    
-                </div>
-                </a>
+                </div>                
             </li>
             <li class="portfolio-item">
                 <a class="portfolio-item-link link" href=""></a>
                 <div class="portfolio-img-wrap">                    
-                        <img src="img/foto3.jpg" alt=""  width="370" height="294">
+                        <img 
+                        srcset="
+                        img/foto3.jpg 1x,
+                        img/foto3-2x.jpg 2x
+                        "
+                        src="img/foto3.jpg" alt=""  width="370" height="294">
                         <p class="portfolio-img-cover-text">
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
@@ -90,12 +137,16 @@
                     <p class="portfolio-top-title">Ресторан Seafood</p>
                     <p class="portfolio-item-text">Приложение</p>
                 </div>
-                </a>
             </li>
             <li class="portfolio-item">
-                <a class="portfolio-item-link link" href="">
+                <a class="portfolio-item-link link" href=""></a>
                 <div class="portfolio-img-wrap">
-                        <img src="img/foto4.jpg" alt=""  width="370" height="294">
+                        <img
+                        srcset="
+                        img/foto4.jpg 1x,
+                        img/foto4-2x.jpg 2x
+                        " 
+                        src="img/foto4.jpg" alt=""  width="370" height="294">
                         <p class="portfolio-img-cover-text">
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
@@ -104,12 +155,16 @@
                     <p class="portfolio-top-title">Проект Prime</p>
                     <p class="portfolio-item-text">Маркетинг</p>
                 </div>
-                </a>
             </li>
             <li class="portfolio-item">
-                <a class="portfolio-item-link link" href="">
+                <a class="portfolio-item-link link" href=""></a>
                 <div class="portfolio-img-wrap">
-                        <img src="img/foto5.jpg" alt=""  width="370" height="294">
+                        <img
+                        srcset="
+                        img/foto5.jpg 1x,
+                        img/foto5-2x.jpg 2x
+                        "
+                        src="img/foto5.jpg" alt=""  width="370" height="294">
                         <p class="portfolio-img-cover-text">
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
@@ -118,13 +173,16 @@
                     <p class="portfolio-top-title">Проект Boxes</p>
                     <p class="portfolio-item-text">Приложение</p>
                 </div>
-                </a>
             </li>
             <li class="portfolio-item">
-                <a class="portfolio-item-link link" href="">
+                <a class="portfolio-item-link link" href=""></a>
                 <div class="portfolio-img-wrap">
-                    <a class="portfolio-item-link link" href="">
-                        <img src="img/foto6.jpg" alt=""  width="370" height="294">
+                        <img
+                        srcset="
+                        img/foto6.jpg 1x,
+                        img/foto6-2x.jpg 2x
+                        "
+                        src="img/foto6.jpg" alt=""  width="370" height="294">
                         <p class="portfolio-img-cover-text">
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
@@ -133,12 +191,16 @@
                     <p class="portfolio-top-title">Inspiration has no Borders</p>
                     <p class="portfolio-item-text">Веб-сайт</p>
                 </div>
-                </a>
             </li>
             <li class="portfolio-item">
-                <a class="portfolio-item-link link" href="">
+                <a class="portfolio-item-link link" href=""></a>
                 <div class="portfolio-img-wrap">                   
-                        <img src="img/foto7.jpg" alt=""  width="370" height="294">
+                        <img 
+                        srcset="
+                        img/foto7.jpg 1x,
+                        img/foto7-2x.jpg 2x
+                        "
+                        src="img/foto7.jpg" alt=""  width="370" height="294">
                         <p class="portfolio-img-cover-text">
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
@@ -147,12 +209,16 @@
                     <p class="portfolio-top-title">Издание Limited Edition</p>
                     <p class="portfolio-item-text">Дизайн</p>
                 </div>
-                </a>
             </li>
             <li class="portfolio-item">
-                <a class="portfolio-item-link link" href="">
+                <a class="portfolio-item-link link" href=""></a>
                 <div class="portfolio-img-wrap">
-                        <img src="img/foto8.jpg" alt=""  width="370" height="294">
+                        <img
+                        srcset="
+                        img/foto8.jpg 1x,
+                        img/foto8-2x.jpg 2x
+                        "
+                        src="img/foto8.jpg" alt=""  width="370" height="294">
                         <p class="portfolio-img-cover-text">
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
@@ -161,12 +227,16 @@
                     <p class="portfolio-top-title">Проект LAB</p>
                     <p class="portfolio-item-text">Маркетинг</p>
                 </div>
-                </a>
             </li>
             <li class="portfolio-item">
-                <a class="portfolio-item-link link" href="">
+                <a class="portfolio-item-link link" href=""></a>
                 <div class="portfolio-img-wrap">
-                        <img src="img/foto9.jpg" alt=""  width="370" height="294">
+                        <img
+                        srcset="
+                        img/foto9.jpg 1x,
+                        img/foto9-2x.jpg 2x
+                        "
+                        src="img/foto9.jpg" alt=""  width="370" height="294">
                         <p class="portfolio-img-cover-text">
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
@@ -175,7 +245,6 @@
                     <p class="portfolio-top-title">Growing Business</p>
                     <p class="portfolio-item-text">Приложение</p>
                 </div>
-                </a>
             </li>
         </ul>
     </div>    
@@ -244,15 +313,18 @@
                             name="user-email"
                             id="user-email"
                             placeholder="Email">
-                            <button class="footer-subscribe-btn" type="submit">Подписаться</button>
+                            <button class="footer-subscribe-btn" type="submit">Подписаться
                             <svg class="footer-subscribe-icon" width="24" height="24">
                                 <use href="./img/icons/symbol-defs.svg#icon-icon-send"></use>
                             </svg>
+                            </button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>  
-    </footer>
+        </footer>
+    <!-- <script src="./js/modal.js"></script>       -->
+    <script src="./js/menu.js"></script>
 </body>
 </html>

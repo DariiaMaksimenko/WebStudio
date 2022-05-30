@@ -1213,18 +1213,36 @@ body {
 }
 
 .portfolio .container {
-  padding-top: var(--padding-in-container);
-  padding-bottom: var(--padding-in-container);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio .container {
+    padding-top: var(--padding-in-container);
+    padding-bottom: var(--padding-in-container);
+  }
 }
 
 .portfolio-btn-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: -15px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-btn-list {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-btn-list {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
 }
 
 .portfolio-btn-item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .portfolio-btn {
@@ -1248,20 +1266,35 @@ body {
 }
 
 .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
   margin-left: -30px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .portfolio-item {
   background: #FFFFFF;
   box-sizing: border-box;
-  width: calc(33.3333333333% - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
 .portfolio-item:hover, .portfolio-item:hover {
+  cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 768px) {
+  .portfolio-item {
+    width: calc(50% - 30px);
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-item {
+    width: calc(33.3333333333% - 30px);
+  }
 }
 
 .portfolio-img-wrap {
@@ -1271,7 +1304,7 @@ body {
 
 .portfolio-img-cover-text {
   position: absolute;
-  top: 0;
+  top: 1px;
   background-color: rgba(33, 150, 243, 0.9);
   color: #ffffff;
   line-height: 1.5;
@@ -1282,8 +1315,17 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: auto;
 }
+@media screen and (min-width: 1200px) {
+  .portfolio-img-cover-text {
+    top: 0;
+  }
+}
 
 .portfolio-item:hover .portfolio-img-cover-text {
+  transform: translateY(0%);
+}
+
+.portfolio-item:focus .portfolio-img-cover-text {
   transform: translateY(0%);
 }
 
