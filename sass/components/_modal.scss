@@ -123,6 +123,7 @@
 .modal-checkbox-fields{
     margin-top: 10px;
     margin-bottom: 30px;
+    
 }
 .accept-rules-text{
     font-size: 12px;
@@ -137,6 +138,7 @@
         height: 15px;
         border: 2px solid #212121;
         border-radius: 3px;
+        cursor: pointer;
     }
     @include desktop {
         font-size: 14px;        
